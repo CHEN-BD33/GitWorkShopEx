@@ -1,7 +1,6 @@
 'use strict'
 
-function onBallClick() {
 
-return console.log('green ball')
-
+function onBallClick(el) {
+     el.style.width = el.style.height = (el.textContent = +el.textContent + 50) + 'px'
 }
