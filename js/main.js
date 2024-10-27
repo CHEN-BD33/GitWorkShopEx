@@ -2,5 +2,7 @@
 
 
 function onBallClick(el) {
-     el.style.width = el.style.height = (el.textContent = +el.textContent + 50) + 'px'
+    const newSize = +el.textContent + 50
+    const size = newSize > 400 ? 100 : newSize
+    el.style.width = el.style.height = (el.textContent = size) + 'px'
 }
