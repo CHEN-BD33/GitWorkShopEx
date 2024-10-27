@@ -6,7 +6,13 @@ h1 {
     color: whitesmoke;
 }
 
-.ball {
+.ball-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ball1, .ball2 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -18,8 +24,16 @@ h1 {
 
     font-size: 22px;
     font-weight: bold;
-    background-color: rgb(25, 163, 46);
 
     transition: all 1s;
     cursor:pointer
+}
+
+.ball1 {
+    background-color: rgb(25, 163, 46);
+}
+
+
+.ball2 {
+    background-color: rgb(25, 117, 163);
 }
